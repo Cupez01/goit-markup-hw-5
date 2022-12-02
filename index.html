@@ -63,11 +63,9 @@
         <!-- <img src="images/banner.jpg" alt="fondo de color" width="1600px" height="600px"> -->
         <div class="text">
           <h1 class="text-pr">SOLUCIONES EFICASES PARA SU NEGOCIO</h1>
-          <div class="button-info">
-            <button class="btn-info" type="button" id="data-modal">
+            <button  type="button" class="btn-info" data-modal-open>
               Solicite nuestro servicio
             </button>
-          </div>
         </div>
       </section>
       <!-- Tarjetas -->
@@ -501,8 +499,15 @@
         </div>
       </footer>
     <!-- Codigo Ventana Modal -->
-    
-    <!----------------------  -->
-    <script src="./js/modal.js "></script>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button data-modal-close class="modal-close">
+          <svg class="icon-close-modal">
+            <use href="images/SVG/icons.svg#icon-Vector"></use>
+          </svg>
+          </button>
+      </div>
+     </div>
+     <script src="./js/modal.js"></script>
   </body>
 </html>
